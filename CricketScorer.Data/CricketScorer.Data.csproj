@@ -40,12 +40,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Match.cs" />
-    <Compile Include="Entities\MatchType.cs" />
+    <Compile Include="Entities\Inning\Ball.cs" />
+    <Compile Include="Entities\Inning\Batting\BatsmanInning.cs" />
+    <Compile Include="Entities\Inning\Batting\BattingInning.cs" />
+    <Compile Include="Entities\Inning\Batting\Partnership.cs" />
+    <Compile Include="Entities\Inning\Bowling\BowlerInning.cs" />
+    <Compile Include="Entities\Inning\Bowling\BowlingInning.cs" />
+    <Compile Include="Entities\Inning\Inning.cs" />
+    <Compile Include="Entities\Inning\Over.cs" />
+    <Compile Include="Entities\Inning\Wicket.cs" />
+    <Compile Include="Entities\Match\Country.cs" />
+    <Compile Include="Entities\Match\Match.cs" />
+    <Compile Include="Entities\Match\MatchLocation.cs" />
+    <Compile Include="Entities\Match\MatchType.cs" />
+    <Compile Include="Entities\Player\BowlingType.cs" />
+    <Compile Include="Entities\Player\Player.cs" />
+    <Compile Include="Entities\Player\PlayerBowling.cs" />
+    <Compile Include="Entities\Player\PlayerRole.cs" />
+    <Compile Include="Entities\Player\PlayerRoleType.cs" />
+    <Compile Include="Entities\Player\Team.cs" />
+    <Compile Include="Entities\Types\Hand.cs" />
+    <Compile Include="Entities\Types\WicketType.cs" />
     <Compile Include="IVersionedEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
